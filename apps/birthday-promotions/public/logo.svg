@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img">
+  <defs>
+    <linearGradient id="lg-birthday-promotions" x1="32" y1="3" x2="32" y2="61" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f472b6"/><stop offset="1" stop-color="#be185d"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="58" height="58" rx="15" fill="url(#lg-birthday-promotions)"/>
+  <rect x="3" y="3" width="58" height="58" rx="15" fill="#fff" opacity=".08"/>
+  <path fill="#fff" d="M20 34c0-3 2-5 4-5h16c2 0 4 2 4 5v9a2 2 0 0 1-2 2H22a2 2 0 0 1-2-2v-9z"/><path fill="#fff" opacity=".55" d="M18 43h28v3a2 2 0 0 1-2 2H20a2 2 0 0 1-2-2v-3z"/><g stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M27 29v-5"/><path d="M32 29v-5"/><path d="M37 29v-5"/></g><g fill="#fff"><circle cx="27" cy="22.5" r="1.8"/><circle cx="32" cy="22.5" r="1.8"/><circle cx="37" cy="22.5" r="1.8"/></g>
+</svg>

@@ -1,0 +1,49 @@
+@import "@inkress/apps-core/styles.css";
+
+/* Birthday Promotions — upcoming cards, template editor + live preview. */
+
+.bp-up { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+.bp-up-card { padding: 14px; border: 1px solid var(--line); border-radius: var(--r); background: var(--surface); text-align: center; }
+.bp-up-when { font-size: 0.6875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); margin-bottom: 4px; }
+.bp-up-card strong { display: block; }
+.bp-up-card button { margin-top: 10px; width: 100%; }
+.bp-noemail { display: inline-block; margin-top: 10px; font-size: 0.75rem; }
+.bp-row-actions { display: inline-flex; gap: 4px; }
+
+.bp-warn { display: flex; align-items: center; gap: 8px; margin-top: 14px; padding: 10px 12px; border-radius: 9px; background: var(--warn-wash); color: oklch(0.5 0.12 70); font-size: 0.8125rem; }
+
+.bp-form { display: flex; flex-direction: column; gap: 12px; }
+.bp-field { display: flex; flex-direction: column; gap: 5px; }
+.bp-field code { font-family: var(--mono); font-size: 0.75rem; background: var(--panel); padding: 1px 5px; border-radius: 4px; }
+
+.bp-msg { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: start; }
+@media (max-width: 720px) { .bp-msg { grid-template-columns: 1fr; } }
+.bp-msg .bp-field { margin-bottom: 12px; }
+.bp-hint { font-size: 0.75rem; }
+
+.bp-preview { margin-top: 6px; }
+.bp-mail { border: 1px solid var(--line); border-radius: var(--r); padding: 24px; text-align: center; background: var(--surface); }
+.bp-cake { font-size: 36px; }
+.bp-mail h3 { margin: 6px 0 8px; }
+.bp-mail p { color: var(--ink-soft); }
+.bp-code { display: inline-block; border: 2px dashed #c9a227; border-radius: 12px; padding: 12px 24px; margin: 8px 0; }
+.bp-code span { display: block; font-size: 0.625rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-faint); }
+.bp-code b { font-size: 1.375rem; font-weight: 800; letter-spacing: 0.03em; }
+.bp-mail-foot { color: var(--ink-faint); font-size: 0.75rem; margin-top: 14px; }
+.bp-preview { --ac: #e0457b; }
+.bp-preview .bp-code { border-color: var(--ac); }
+.bp-preview .bp-code b { color: var(--ac); }
+
+/* toolbar, filters, channels, milestones */
+.bp-toolbar { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.bp-filterbar { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; flex-wrap: wrap; }
+.bp-search { min-width: 160px; flex: 0 1 220px; }
+.bp-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 520px) { .bp-form-grid { grid-template-columns: 1fr; } }
+.bp-field-color input[type="color"] { width: 56px; height: 38px; padding: 2px; border-radius: 8px; cursor: pointer; }
+.bp-check { display: flex; align-items: center; gap: 8px; font-size: 0.875rem; color: var(--ink-soft); cursor: pointer; }
+.bp-check input { width: auto; height: auto; }
+.bp-channels { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+.bp-wa-soon { font-size: 0.78rem; font-style: italic; }
+.bp-divider { height: 1px; background: var(--line); margin: 6px 0; }
+.bp-src { display: inline-block; margin-left: 6px; font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-faint); background: var(--panel); padding: 1px 6px; border-radius: 6px; }
